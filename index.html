@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>TaxMate PK</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>🇵🇰 TaxMate PK</h1>
+    <p>Enter your yearly income:</p>
+
+    <input type="number" id="income" placeholder="Enter income in PKR">
+    <button onclick="calculateTax()">Calculate Tax</button>
+
+    <h2 id="result"></h2>
+
+    <div class="slabs">
+      <h3>Tax Slabs</h3>
+      <ul>
+        <li>0 - 600,000 → 0%</li>
+        <li>600,001 - 1,200,000 → 2.5%</li>
+        <li>1,200,001 - 2,400,000 → 12.5%</li>
+        <li>2,400,001 - 3,600,000 → 20%</li>
+        <li>3,600,001 - 6,000,000 → 25%</li>
+        <li>6,000,001 - 12,000,000 → 32.5%</li>
+        <li>Above 12,000,000 → 35%</li>
+      </ul>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
